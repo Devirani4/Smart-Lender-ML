@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Prediction</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:60%;
+            margin:30px auto;
+            background:white;
+            padding:25px;
+            border-radius:8px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        h2{
+            text-align:center;
+            color:#2E8B57;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input[type=number], select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:4px;
+        }
+
+        input[type=submit]{
+            width:100%;
+            background:#04AA6D;
+            color:white;
+            padding:12px;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            font-size:18px;
+        }
+
+        input[type=submit]:hover{
+            background:#038f5a;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Enter your Details for Loan Approval Prediction</h2>
+
+<form action="/submit" method="post">
+
+<label>Gender</label>
+<select name="Gender">
+    <option value="0">Male</option>
+    <option value="1">Female</option>
+</select>
+
+<label>Married</label>
+<select name="Married">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+</select>
+
+<label>Dependents</label>
+<input type="number" name="Dependents" required>
+
+<label>Education</label>
+<select name="Education">
+    <option value="0">Graduate</option>
+    <option value="1">Not Graduate</option>
+</select>
+
+<label>Self Employed</label>
+<select name="Self_Employed">
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+</select>
+
+<label>Applicant Income</label>
+<input type="number" name="ApplicantIncome" required>
+
+<label>Co Applicant Income</label>
+<input type="number" name="CoapplicantIncome" required>
+
+<label>Loan Amount</label>
+<input type="number" name="LoanAmount" required>
+
+<label>Loan Amount Term</label>
+<input type="number" name="Loan_Amount_Term" required>
+
+<label>Credit History</label>
+<select name="Credit_History">
+    <option value="1">Good</option>
+    <option value="0">Bad</option>
+</select>
+
+<label>Property Area</label>
+<select name="Property_Area">
+    <option value="0">Urban</option>
+    <option value="1">Semiurban</option>
+    <option value="2">Rural</option>
+</select>
+
+<input type="submit" value="Predict Loan Approval">
+
+</form>
+
+</div>
+
+</body>
+</html>

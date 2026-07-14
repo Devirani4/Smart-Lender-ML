@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Result</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+        }
+
+        .container{
+            width:50%;
+            margin:100px auto;
+            background:white;
+            padding:30px;
+            border-radius:8px;
+            text-align:center;
+            box-shadow:0 0 10px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            color:#2E8B57;
+        }
+
+        h2{
+            color:#0B8457;
+            margin:30px 0;
+        }
+
+        a{
+            display:inline-block;
+            padding:12px 25px;
+            background:#04AA6D;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        a:hover{
+            background:#038f5a;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Loan Prediction Result</h1>
+
+    <h2>{{ prediction_text }}</h2>
+
+    <a href="/predict">Predict Again</a>
+
+</div>
+
+</body>
+</html>
